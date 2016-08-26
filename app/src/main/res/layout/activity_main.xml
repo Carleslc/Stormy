@@ -50,7 +50,7 @@
         android:layout_marginBottom="60dp"
         android:textColor="@android:color/white"
         android:textSize="24sp"
-        android:text="@string/location_unavailable"/>
+        android:text="..."/>
 
     <ImageView
         android:layout_width="wrap_content"

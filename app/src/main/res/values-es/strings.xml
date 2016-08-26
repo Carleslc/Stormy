@@ -7,7 +7,7 @@
     <string name="sync_message">Obteniendo el tiempo actual…</string>
     <string name="rain_label">LLUVIA/NIEVE?</string>
     <string name="humidity_label">HUMEDAD</string>
-    <string name="location_unavailable">Datos no disponibles</string>
+    <string name="location_unavailable">Ubicación no disponible</string>
     <string name="gps_disabled">Ubicación desactivada</string>
     <string name="location_disabled">Imposible obtener la localización actual.</string>
 </resources>
