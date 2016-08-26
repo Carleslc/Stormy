@@ -105,7 +105,6 @@ public class LocationService implements
         if (!mGoogleApiClient.isConnected()) {
             Log.w(TAG, "GoogleApiClient is disconnected.");
             mGoogleApiClient.connect();
-            return;
         }
         else if (hasPermissions()) {
             LocationSettingsRequest.Builder builder = new LocationSettingsRequest
