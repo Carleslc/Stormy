@@ -139,6 +139,7 @@ public class MainActivity extends AppCompatActivity {
                     String address = LocationService.getRegionalAddress(addresses.get(0));
                     if (!address.isEmpty()) mLocationLabel.setText(address);
                 }
+                else mLocationLabel.setText(R.string.location_unavailable);
                 toggleRefresh();
             });
         });
@@ -230,11 +231,15 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case Activity.RESULT_CANCELED:
                         Log.i(TAG, "User chose not to make required location settings changes.");
-                        mSummaryLabel.setText(R.string.location_disabled);
+                        if (!hasDataLoaded()) mSummaryLabel.setText(R.string.location_disabled);
                         break;
                 }
                 mLocationService.setRequestingPermissions(false);
             }
         }
+    }
+
+    private boolean hasDataLoaded() {
+        return !mSummaryLabel.getText().equals(getString(R.string.sync_message));
     }
 }
