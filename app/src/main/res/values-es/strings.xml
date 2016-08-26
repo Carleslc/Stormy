@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_message">Ha ocurrido un error, por favor, inténtalo de nuevo.</string>
+    <string name="error_title">¡Vaya! ¡Lo sentimos!</string>
+    <string name="network_unavailable_message">¡No hay conexión de red!</string>
+    <string name="time_label_info">A las %1$s el tiempo será</string>
+    <string name="sync_message">Obteniendo el tiempo actual…</string>
+    <string name="rain_label">LLUVIA/NIEVE?</string>
+    <string name="humidity_label">HUMEDAD</string>
+    <string name="location_unavailable">Datos no disponibles</string>
+    <string name="gps_disabled">Ubicación desactivada</string>
+    <string name="location_disabled">Imposible obtener la localización actual.</string>
+</resources>
